@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ img{
+     height: 400px;
+     width: 100%;
+     margin: auto;
+     
+ }
+ .container{
+     width: 70%;
+     align-items: center;
+     margin: auto;
+     padding: 20px;
+ }
+ #sobre{
+     margin: 20px;
+     font-size:  2em;
+ }
+ #text{
+     line-height: 20px;
+     font-size: 1.2em;
+     width: 100%;
+ }
+
+ [data-anime]{
+       
+     transition: .3s;
+ }
+ [data-anime="top"]{
+     transform: translateY(-200px);
+     opacity: 0;
+     transition: .3s;
+ }
+ [data-anime="left"]{
+    transform: translateX(-1000px);
+    opacity: 0;
+}
+[data-anime="right"]{
+    transform: translateX(-100px);
+    opacity: 0;
+}
+[data-anime].animate{
+    
+    
+    transform: translateY(20px);
+    transform: translateX(0px);
+    opacity: 1; 
+}
